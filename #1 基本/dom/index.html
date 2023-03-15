@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ç {
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div>タグ紹介</div>
+    <div>
+        <h2>ヘッダー(h)タグ</h2>
+        <p>ヘッダーは見出しのこと。h1タグは1つのHTMLにただ１つしか使ってはいけない。デフォルトでヘッダーの前後にマージンが設定されている。</p>
+        <h1>ヘッダー1</h1>
+        <h2>ヘッダー2</h1>
+        <h3>ヘッダー3</h1>
+        <h4>ヘッダー4</h1>
+    </div>
+    <div>
+        <h2 id="div-header">div(ディブ)タグ</h2>
+        <p>divタグはタグをとりあえずまとめるときに使う。何使えばいいかわからないときはとりあえずdivタグで。なんの変哲もないタグだけどcss加えたら最強。その範囲に対してスタイルをあてることができる。</p>
+        <div>
+            <div>あいうえお</div>
+            <div>かきくけこ</div>
+        </div>
+    </div>
+    <div>
+        <h2>span(スパン)タグ</h2>
+        <p>divタグがタグをまとめるときに使うのに対し、spanタグはある範囲のテキストにスタイルを当てるときに使う。</p>
+        <div>
+            <p><span class="important">大事なこと</span>は強調したい</p>
+        </div>
+    </div>
+    <div>
+        <h2>pタグ</h2>
+        <p>pタグはパラグラフ(段落)の頭文字からきている。ブログだとよく使うかも。アプリにはあまり使わない。デフォルトでmargin-bottomが設定される。</p>
+    </div>
+    <div>
+        <h2>テーブルタグ</h2>
+        <p>テーブルタグはスマホだと見にくいので、レスポンシブデザイン(横幅に応じてデザインを柔軟に変えるデザイン)が採用されている現在はあまり使用されなくなっている。代わりにflexやgridで表を組むことがおおい。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">The table header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The table body</td>
+                    <td>with two columns</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>リストタグ</h2>
+        <p>リストタグは箇条書きのときや、順番を示すときに使う。ulはunorder(順番なし)リストでolはorder(順番あり)リスト</p>
+
+        <ul>
+            <li>りんご</li>
+            <li>ばなな</li>
+            <li>みかん</li>
+        </ul>
+
+        <ol>
+            <li>りんご</li>
+            <li>ばなな</li>
+            <li>みかん</li>
+        </ol>
+
+        <dl>
+            <dt>戦闘力:</dt>
+            <dd>5</dd>
+            <dt>名前:</dt>
+            <dd>たろう</dd>
+        </dl>
+        
+    </div>
+    <div>
+        <h2>フォーム系</h2>
+        <p>ユーザーからの入力は基本的にフォーム系で受け付ける。inputタグのtypeにいろいろ指定すれば、いろんなフォームを扱えるようになる。実務では良く扱うが、一番面倒くさい。</p>
+        <form>
+            <label>
+                テキストインプット
+                <input type="text"/><br/>
+            </label>
+            <label>
+                数字インプット
+                <input type="number"/><br/>
+            </label>
+            <label>
+                日付インプット
+                <input type="date" /><br/>
+            </label>
+            <label>
+                レンジインプット
+                <input type="range" /><br/>
+            </label>
+            <label>
+                ファイルインプット
+                <input type="file"/><br/>
+            </label>
+            <label>
+                チェックボックスインプット
+                <input type="checkbox"/><br/>
+            </label>
+            <label>
+                ラジオインプット
+                <input type="radio"/><br/>
+            </label>
+            <label>
+                ドロップダウン
+                <select>
+                    <option>選択肢１</option>
+                    <option>選択肢2</option>
+                    <option>選択肢３</option>
+                </select>
+            </label>
+        </form>
+    </div>
+    <div>
+        <h2>テキスト系</h2>
+        <p>
+            テキスト系は色々種類があるが、あまり使うことはない。smallのみ紹介する。
+        </p>
+        <p>50<small>%</small>のように単位を小さくしたり、サブテキストとして表示するのに使う。</p>
+    </div>
+    <div><h2>img(イメージ)タグ</h2>
+    <p>画像を表示させるのに使う</p>
+    <img src="" alt="これは画像が見えないとき(人)用の補助テキスト。画像の代わりに画像の説明文をいれる。" >
+    </div>
+    <div><h2>アンカー(a)タグ</h2>
+        <p>他のページや、同じページのある見出しにリンクする</p>
+        <a href="https://www.google.com" class="">googleへのリンク</a>
+        <a href="#div-header" class="">divタグ見出しへのページ内リンク</a>
+        </div>
+    
+</body>
+</html>
