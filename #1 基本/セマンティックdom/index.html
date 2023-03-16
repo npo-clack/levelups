@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>セマンティクスについて</h2>
+        <p>ヘッダーにはナビゲーションやタイトルとか入れる</p>
+    </header>
+     <main>
+        <section>
+            <p>
+                セマンティックなHTMLとは汎用的なdivタグやspanタグをあまりを使わずに、積極的に意味のあるタグ(header, main, footerなど)を優先して使ったHTMLのこと。
+                例えば、h1タグとspanタグを使って同じような見かけを実現できるが、最上位の見出しにはどちらのタグを使うべきだろうか？
+                <h1>これは最上位の見出しです</h1>
+                <span style="font-size: 32px; margin: 21px 0;">これは最上位の見出しですか？</span>
+            </p>
+            <p>
+                この場合は、「最上位の見出し」という意味を持ったh1タグを使うのが正しい。正しい場所に正しい意味のあるタグを配置することで、SEO対策になったり、視覚障害を持ったユーザーがページ移動しやすくなる。
+                基本的には、HTMLタグは文章の構成や骨組みの役割をもち、cssは見た目やスタイルの役割をもつ。それを意識していろんなタグを使ってみよう。
+                <a href="https://developer.mozilla.org/ja/docs/Glossary/Semantics">参考記事</a>
+            </p>
+        </section>
+     </main>
+    <footer style="position:fixed; bottom:0; background-color: beige; width: 100%;">footerにはコピーライトとかいれる</footer>
+</body>
+</html>
