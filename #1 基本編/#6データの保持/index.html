@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>データの保持</h1>
+    <p>関数の外で変数を定義することで、変数の寿命が伸びる。なぜなら、関数の中で定義された変数は関数ブロック(波括弧{}の中の範囲)が終われば捨てられるからこのcountのように一番外で定義すれば　寿命はブラウザが閉じられるまで延長される。この仕組をうまく使えば、ブラウザ内部で一時的にデータを保管するのに使える(ただし、ブラウザを閉じたら消えるが)。データをブラウザがとじても消えないようにするにはLocalStorageを使ったり、もしくはサーバーサイドを実装してDBとつなげる。データをファイルとして出力するやり方もサーバーサイドやPCのアプリなどでは一般的だが、ブラウザはセキュリティの問題上PC上のファイルを扱うのは得意ではない。</p>
+    <div id="countDisplay">0</div>
+    <button id="countButton">カウントアップ</button>
+    <button id="resetButton">リセット</button>
+    <script src="main.js"></script>
+</body>
+</html>

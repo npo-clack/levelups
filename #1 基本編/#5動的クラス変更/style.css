@@ -1,0 +1,18 @@
+#colorPlace {
+    width: 500px;
+    height: 500px;
+}
+
+.color-gray {
+  background-color: gray;
+}
+
+.color-red  {
+    background-color: red;
+}
+.color-green  {
+    background-color: green;
+}
+.color-blue  {
+    background-color: blue;
+}
