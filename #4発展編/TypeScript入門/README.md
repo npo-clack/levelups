@@ -11,3 +11,6 @@
    https://typescript-jp.gitbook.io/deep-dive/
 
 3. TypeScript を使って自分でアプリを作ってみよう
+
+4. TypeScript チャレンジ
+   https://github.com/type-challenges/type-challenges/blob/main/README.ja.md
