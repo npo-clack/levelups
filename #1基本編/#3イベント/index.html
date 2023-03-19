@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>イベント</h1>
+    <div><span>マウス移動:</span><span id="mouseMove"></span></div>
+    <div><span>キーボード押下:</span><span id="keyDown"></span></div>
+    <div><span>ボタンクリック:</span><span id="buttonClick"></span></div>
+    <div
+      id="area"
+      style="
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: tomato;
+        height: 300px;
+      "
+    >
+      <div><span>マウス移動:</span><span id="tomatoMouseMove"></span></div>
+      <div><span>キーボード押下:</span><span id="tomatoKeyDown"></span></div>
+      <input placeholder="なにか入力してみて..." />
+      <div>
+        <span>ボタンクリック:</span><span id="tomatoButtonClick"></span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

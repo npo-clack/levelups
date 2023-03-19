@@ -1,0 +1,37 @@
+/* コメント */
+
+/* 通常タグ */
+body {
+  background-color: rgb(220, 223, 225);
+}
+
+/* class */
+.card {
+  width: 200px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.card-body {
+  color: rgb(94, 96, 100);
+}
+
+.card-right-margin {
+  margin-right: 8px;
+}
+
+.card-list {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>スタイル</h1>
+    <!-- inline blockで横並び -->
+    <h2>inline blockで横並び</h2>
+    <div>
+      <div class="card card-right-margin inline-block">
+        <div class="card-header">スイミー</div>
+        <div class="card-body">僕が目になるよ</div>
+      </div>
+      <div class="card card-right-margin inline-block">
+        <div class="card-header">ルロイ修道士</div>
+        <div class="card-body">月火水木金金土</div>
+      </div>
+      <div class="card inline-block">
+        <div class="card-header">エーミール</div>
+        <div class="card-body">
+          そうか、そうか、つまり君はそんなやつなんだな
+        </div>
+      </div>
+    </div>
+    <!-- flexで横並び -->
+    <h2>flexで横並び</h2>
+    <div class="card-list">
+      <div class="card">
+        <div class="card-header">スイミー</div>
+        <div class="card-body">僕が目になるよ</div>
+      </div>
+      <div class="card">
+        <div class="card-header">ルロイ修道士</div>
+        <div class="card-body">月火水木金金土</div>
+      </div>
+      <div class="card">
+        <div class="card-header">エーミール</div>
+        <div class="card-body">
+          そうか、そうか、つまり君はそんなやつなんだな
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

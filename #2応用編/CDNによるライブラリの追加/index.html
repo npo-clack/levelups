@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- anime.jsのcdnを指定 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <h1>CDNによるライブラリ追加</h1>
+    <p>
+      ライブラリは協力な武器を提供してくれる。ライブラリをダウンロードする方法は２つある。
+    </p>
+    <ul>
+      <li>
+        直接ライブラリのソースコードをダウンロードしてきて、ファイル名をscriptタグで指定する。
+      </li>
+      <li>
+        scriptタグで直接ライブラリを配信しているCDNサーバーのリンクを指定する。
+      </li>
+    </ul>
+    <h2>
+      直接ライブラリのソースコードをダウンロードしてきて、ファイル名をscriptタグで指定する。
+    </h2>
+    <p>
+      直接ライブラリのソースコードをダウンロードするには、ライブラリのホームページにいきダウンロードリンクを探すことでできる。例えば、アニメーションを強化するライブラリ<a
+        href="https://animejs.com/"
+        >anime.jsのサイト</a
+      >では下の方にダウンロードリンクがある。
+    </p>
+    <h2>
+      scriptタグで直接ライブラリを配信しているCDNサーバーのリンクを指定する。
+    </h2>
+    <p>
+      CDNサーバーとは、ContentsDeliveryNetwork(コンテンツデリバリーネットワーク)の略で、世界各地にコンテンツを遅延を少なく配信する役割を持ったサーバーのこと。写真や動画の他に、ライブラリを配信する専用サーバーもあり、開発者はこれを積極的に使っている。例えば、アニメーションを強化するライブラリ<a
+        href="https://animejs.com/"
+        >anime.jsのサイト</a
+      >には、CDNリンクは提供されていないが、<a
+        href="https://cdnjs.com/libraries/animejs"
+        >「anime.js cdn」と検索すれば、CDNサーバーが見つかる。</a
+      >
+    </p>
+    <h2>anime.jsの例</h2>
+    <p>
+      anime.jsというライブラリを使うとこのような強力な表現もでいるようになる。<a
+        href="https://tr.you84815.space/animejs/"
+        >その他の例</a
+      >
+    </p>
+    <div class="stagger-visualizer-wrapper">
+      <div class="stagger-visualizer"></div>
+    </div>
+    <button id="playButton">プレイ</button>
+    <button id="pauseButton">ポーズ</button>
+    <h2>ライブラリの種類</h2>
+    <ul>
+      <li>
+        CSSフレームワーク・Util系(<a
+          href="https://coliss.com/articles/build-websites/operation/css/awesome-css-frameworks.html"
+          >コリスの記事</a
+        >、<a href="https://lodash.com/">Lodash</a>)
+      </li>
+      <li>アニメーション系(<a href="https://animejs.com/">anime.js</a>他)</li>
+      <li>
+        クリエイティブ系(<a href="https://ics.media/entry/category/creative/"
+          >ICSメディア記事一覧</a
+        >)
+      </li>
+    </ul>
+    <style>
+      .stagger-visualizer-wrapper {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        height: 18rem;
+        background-color: gray;
+      }
+      .stagger-visualizer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 17rem;
+        height: 17rem;
+      }
+
+      .stagger-visualizer div {
+        /*position: absolute;*/
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid red;
+        background-color: red;
+      }
+    </style>
+    <script>
+      // https://codepen.io/juliangarnier/pen/XvjWvx
+      const staggerVisualizerEl =
+        document.getElementsByClassName("stagger-visualizer")[0];
+      const fragment = document.createDocumentFragment();
+      const grid = [15, 15];
+      const col = grid[0];
+      const row = grid[1];
+      const numberOfElements = col * row;
+
+      for (let i = 0; i < numberOfElements; i++) {
+        fragment.appendChild(document.createElement("div"));
+      }
+
+      staggerVisualizerEl.appendChild(fragment);
+
+      const staggersAnimation = anime({
+        targets: ".stagger-visualizer div",
+        scale: [
+          { value: 0.1, easing: "easeOutSine", duration: 500 },
+          { value: 1, easing: "easeInOutQuad", duration: 1200 },
+        ],
+        delay: anime.stagger(200, { grid: [14, 5], from: "center" }),
+        loop: true,
+        autoplay: false,
+      });
+
+      document.getElementById("playButton").onclick = staggersAnimation.play;
+      document.getElementById("pauseButton").onclick = staggersAnimation.pause;
+    </script>
+  </body>
+</html>

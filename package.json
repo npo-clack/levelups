@@ -1,0 +1,14 @@
+{
+  "name": "@clack/levelups",
+  "version": "1.0.0",
+  "description": "N予備校１章の知識でアプリを作る",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.4"
+  }
+}
