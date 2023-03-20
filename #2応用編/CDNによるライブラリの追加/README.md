@@ -1,3 +1,26 @@
+# CDN によるライブラリの追加
+
+ライブラリは協力な武器を提供してくれる。ライブラリをダウンロードする方法は２つある。
+
+- 直接ライブラリのソースコードをダウンロードしてきて、ファイル名を script タグで指定する。
+- script タグで直接ライブラリを配信している CDN サーバーのリンクを指定する。
+
+## 直接ライブラリのソースコードをダウンロードしてきて、ファイル名を script タグで指定する方法
+
+     直接ライブラリのソースコードをダウンロードするには、ライブラリのホームページにいきダウンロードリンクを探すことでできる。例えば、アニメーションを強化するライブラリ<a
+        href="https://animejs.com/"
+        >anime.jsのサイト</a
+      >では下の方にダウンロードリンクがある。
+
+## script タグで直接ライブラリを配信している CDN サーバーのリンクを指定する方法
+
+CDN サーバーとは、ContentsDeliveryNetwork(コンテンツデリバリーネットワーク)の略で、世界各地にコンテンツを遅延を少なく配信する役割を持ったサーバーのこと。写真や動画の他に、ライブラリを配信する専用サーバーもあり、開発者はこれを積極的に使っている。例えば、アニメーションを強化するライブラリ[anime.js のサイト](https://animejs.com/)には、CDN リンクは提供されていないが、[「anime.js cdn」と検索すれば、CDN サーバーが見つかる。](https://cdnjs.com/libraries/animejs)
+
+### anime.js の例
+
+anime.js というライブラリを使うと[様々な表現](https://tr.you84815.space/animejs/)もできるようになる。体験してみよう。以下の HTML をコピーして、自分で開いてみよう。
+
+```html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -80,3 +103,11 @@
     </script>
   </body>
 </html>
+```
+
+## ライブラリの種類
+
+- CSS フレームワーク系 ([コリス記事](https://coliss.com/articles/build-websites/operation/css/awesome-css-frameworks.html))
+- 便利系([lodash](https://lodash.com/))
+- アニメーション系([anime.js](https://animejs.com/))
+- クリエイティブ系([ICS メディア記事一覧](https://ics.media/entry/category/creative/))

@@ -30,7 +30,7 @@ JS の世界で DOM を読み込む方法はいくつかあります。代表的
 
 ```html: index.html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>

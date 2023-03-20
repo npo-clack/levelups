@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,39 +8,7 @@
   </head>
   <body>
     <h1>アロー関数</h1>
-    <p>
-      アロー関数は簡単に言えば　function(){}
-      という書き方を短縮したもの(ショートハンド)である。
-    </p>
-    <pre><code>
-        const sayHello! = function(name){
-            console.log("Hello" + name + "!");
-        }
-
-        sayHello('tanaka');
-
-        const sayGoodBye! = (name) => {
-            console.log("GoodBye" + name + "!");
-        }
-
-        sayGoodBye('tanaka');
-    </code></pre>
-    <p>
-      厳密には、functionとアロー関数の書き方で、クラスにおけるthisの挙動が変わるが、クラスを書く機会がない限り、その違いは覚えなくて良い。モダン開発においては、functionの書き方よりも見やすいので、アロー関数がよく使われる。
-    </p>
-    <pre><code>
-        const button = document.getElementById('button');
-
-        button.onclick = () => {
-            alert("Hello!");
-        }
-    </code></pre>
     <button id="button">こんにちは！</button>
-    <style>
-      pre {
-        background-color: rgb(190, 204, 224);
-      }
-    </style>
     <script>
       const button = document.getElementById("button");
 
