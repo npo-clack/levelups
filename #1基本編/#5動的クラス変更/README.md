@@ -45,7 +45,7 @@
 
 今回は、これを実現してみよう。まずは、HTML を用意する。
 
-```HTML:index.html
+```Html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -68,7 +68,7 @@
 
 つぎに CSS を用意する。
 
-```css:style.css
+```css
 #colorPlace {
   width: 500px;
   height: 500px;
@@ -91,7 +91,7 @@
 
 さて問題は JS。先に完成形を見せておく。
 
-```js: main.js
+```js
 const colorPlace = document.getElementById("colorPlace");
 
 const redButton = document.getElementById("redButton");

@@ -38,7 +38,7 @@ https://developer.mozilla.org/ja/docs/Web/Events
 
 まずは、以下の HTML をコピペして、表示してみる。
 
-```html:index.html
+```html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -72,7 +72,6 @@ https://developer.mozilla.org/ja/docs/Web/Events
     <script src="main.js"></script>
   </body>
 </html>
-
 ```
 
 ## main.js の完成
@@ -137,7 +136,7 @@ tomatoArea.onclick = function (clickEvent) {
 
 ブラウザ全体にマウスムーブイベントリスナーを設定
 
-```js:main.js
+```js
 window.onmousemove = function (mouseEvent) {
   // これをコメントイン(//を消して実行可能にする)してどんなイベントが渡されるかみてみよう
   // console.log(mouseEvent)
@@ -149,8 +148,7 @@ window.onmousemove = function (mouseEvent) {
 
 id が`area`の div タグに対してマウスムーブイベントを設定
 
-```js: main.js
-
+```js
 const tomatoArea = document.getElementById("area");
 
 tomatoArea.onmousemove = function (mouseEvent) {
@@ -168,7 +166,7 @@ tomatoArea.onmousemove = function (mouseEvent) {
 
 ブラウザ全体にキーボードダウンリスナーを設定
 
-```js:main.js
+```js
 window.onkeydown = function (keyEvent) {
   // これをコメントイン(//を消して実行可能にする)してどんなイベントが渡されるかみてみよう
   // console.log(keyEvent)
@@ -180,7 +178,7 @@ window.onkeydown = function (keyEvent) {
 
 id が`area`の div タグに対してキーボードダウンイベントを設定
 
-```js: main.js
+```js
 // NOTE: divタグには通常キーボードがフォーカスしないのでこれは機能しないが、inputタグがあればキーボードがフォーカスするため機能する。
 tomatoArea.onkeydown = function (keyEvent) {
   // これをコメントイン(//を消して実行可能にする)してどんなイベントが渡されるかみてみよう
@@ -197,7 +195,7 @@ tomatoArea.onkeydown = function (keyEvent) {
 
 ブラウザ全体にクリックリスナーを設定
 
-```js:main.js
+```js
 window.onclick = function (clickEvent) {
   // これをコメントイン(//を消して実行可能にする)してどんなイベントが渡されるかみてみよう
   // console.log(clickEvent)
@@ -209,7 +207,7 @@ window.onclick = function (clickEvent) {
 
 id が`area`の div タグに対してクリックイベントを設定
 
-```js: main.js
+```js
 tomatoArea.onclick = function (clickEvent) {
   // これをコメントイン(//を消して実行可能にする)してどんなイベントが渡されるかみてみよう
   // console.log(clickEvent)

@@ -1,0 +1,42 @@
+.card {
+  box-shadow: 1px 1px 8px rgb(195, 204, 212);
+}
+
+.card-body {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 4px;
+}
+
+.title {
+  color: rgb(75, 84, 98);
+  font-weight: bold;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .image-list {
+    display: flex;
+    flex-direction: column;
+    /* 真ん中中央寄せ */
+    align-items: center;
+    gap: 16px;
+  }
+}

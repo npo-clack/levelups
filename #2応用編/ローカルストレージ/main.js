@@ -28,10 +28,6 @@ function loadFromLocalStorage() {
   todoList = JSON.parse(textTodoList);
 }
 
-function clearLocalStorage() {
-  localStorage.removeItem(TODO_LIST_KEY);
-}
-
 function displayTodo() {
   // クリア
   todoListArea.innerText = "";
@@ -70,7 +66,7 @@ function clearTodo() {
   displayTodo();
 
   // ローカルストレージを削除
-  clearLocalStorage();
+  localStorage.removeItem(TODO_LIST_KEY);
 }
 
 /* ----- イベントリスナー ------*/
