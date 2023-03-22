@@ -28,7 +28,7 @@ JS の世界で DOM を読み込む方法はいくつかあります。代表的
 
 いかの`index.html`に対して、DOM 操作をする。
 
-```html: index.html
+```html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -50,7 +50,7 @@ JS の世界で DOM を読み込む方法はいくつかあります。代表的
 
 先に完成品の`main.js`を見せておく。
 
-```js:main.js
+```js
 console.log("js読み込み start");
 
 const element1 = document.getElementById("element1");
@@ -86,7 +86,7 @@ console.log("js読み込み done");
 
 まずは、それぞれ id と class の DOM を取得する。
 
-```js: main.js
+```js
 const element1 = document.getElementById("element1");
 const element2 = document.getElementById("element2");
 const element3 = document.getElementById("element3");
@@ -95,7 +95,7 @@ const elements = document.getElementsByClassName("elements");
 
 次に id で取得したそれぞれの DOM に文字列を代入してみる。
 
-```js: main.js
+```js
 element1.innerText = "innerTextで新しくelement1に文字列を代入";
 element2.innerHTML = "innerHTMLで新しくelement2に文字列を代入";
 element3.innerText = "appendChildを使えば他のタグを子要素として追加できる";
@@ -105,7 +105,7 @@ element3.innerText = "appendChildを使えば他のタグを子要素として�
 
 次に、`appendChild()`を使ってみる。これは DOM に子要素を追加するする関数。
 
-```js: main.js
+```js
 // appendChild用のタグを生成
 const newChildTag1 = document.createElement("span");
 // 生成したタグに文章追加
@@ -123,7 +123,7 @@ element3.appendChild(newChildTag2);
 
 次に、class 名が`elements`のタグに対して、それぞれ文字列を追加してみる。通常 class は id とは違い複数のタグに同じ名前がつけられる。そこで、`getElementsByClassName()`は配列が返り値。それをループ野中で１つ１つの DOM 要素に対して文字列を追加したいいと思う。
 
-```js: main.js
+```js
 for (let i = 0; i < elements.length; i++) {
   const element = elements[i];
   element.innerText = "クラスで一気にタグを編集できる。";
