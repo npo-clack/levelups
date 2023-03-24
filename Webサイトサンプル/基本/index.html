@@ -23,27 +23,66 @@
               >
             </li>
           </a>
-          <li class="menu-item">
-            <img class="menu-icon" src="paw.svg" alt="肉球アイコン" /><span
-              >しゃしん</span
-            >
-          </li>
-          <li class="menu-item">
-            <img class="menu-icon" src="paw.svg" alt="肉球アイコン" /><span
-              >あそび</span
-            >
-          </li>
+          <a href="photo.html">
+            <li class="menu-item">
+              <img class="menu-icon" src="paw.svg" alt="肉球アイコン" /><span
+                >しゃしん</span
+              >
+            </li>
+          </a>
         </ul>
       </nav>
     </header>
     <main>
       <div class="container two-column">
-        <div class="column-item">
-          <img alt="自己紹介用画像" class="large-img" />
+        <div class="column-item introduce-image-area">
+          <img
+            src="images/main1.jpg"
+            alt="自己紹介用画像"
+            class="introduce-image"
+            id="introduce-image"
+          />
+          <button class="introduce-image-button" id="introduce-image-button">
+            <img src="paw2.svg" />
+          </button>
         </div>
-        <div class="column-item">あああ</div>
+        <div class="column-item introduce-list">
+          <div>
+            <h3 class="title">名前</h3>
+            ましろ
+          </div>
+          <div>
+            <h3 class="title">年齢</h3>
+            ３歳
+          </div>
+          <div>
+            <h3 class="title">犬種</h3>
+            ペキニーズ
+          </div>
+          <div>
+            <h3 class="title">性格</h3>
+            甘えん坊
+          </div>
+        </div>
       </div>
     </main>
     <footer>© 2023 clack All rights reserved.</footer>
+    <script>
+      let currentImageSrc = "images/main1.jpg";
+      const introduceImageButton = document.getElementById(
+        "introduce-image-button"
+      );
+      introduceImageButton.onclick = function () {
+        const introduceImage = document.getElementById("introduce-image");
+        console.log(introduceImage.src);
+        if (currentImageSrc === "images/main2.jpg") {
+          introduceImage.src = "images/main1.jpg";
+          currentImageSrc = "images/main1.jpg";
+        } else {
+          introduceImage.src = "images/main2.jpg";
+          currentImageSrc = "images/main2.jpg";
+        }
+      };
+    </script>
   </body>
 </html>

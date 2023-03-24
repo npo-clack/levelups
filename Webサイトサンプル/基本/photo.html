@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ましろギャラリー</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- カルーセルライブラリ -->
+
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="global-navigation">
+        <div class="logo">
+          <img class="logo-icon" src="dog.svg" />
+          <span class="logo-text">ましろギャラリー </span>
+        </div>
+        <ul class="global-menu">
+          <a href="index.html">
+            <li class="menu-item">
+              <img class="menu-icon" src="paw.svg" alt="肉球アイコン" /><span
+                >じこしょうかい</span
+              >
+            </li>
+          </a>
+          <a href="photo.html">
+            <li class="menu-item">
+              <img class="menu-icon" src="paw.svg" alt="肉球アイコン" /><span
+                >しゃしん</span
+              >
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="splide" aria-label="Splideの基本的なHTML">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="images/photo1.jpg"
+                  alt="写真１"
+                  class="slide-image slide-image1"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="images/photo2.jpg"
+                  alt="写真2"
+                  class="slide-image slide-image2"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="images/photo3.jpg"
+                  alt="写真3"
+                  class="slide-image slide-image3"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="images/photo4.jpg"
+                  alt="写真4"
+                  class="slide-image slide-image4"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>© 2023 clack All rights reserved.</footer>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script>
+      new Splide(".splide").mount();
+    </script>
+  </body>
+</html>
