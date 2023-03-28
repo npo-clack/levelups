@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+#question {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#optionArea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-button {
+  width: 300px;
+  padding: 8px;
+  border-width: 1px;
+  border-style: sold;
+  border-color: palevioletred;
+  background-color: white;
+  font-size: 16px;
+  color: palevioletred;
+}
+
+.hidden {
+  /* 他のスタイルが　displayを指定してあると負けることがあるのでimportantで強制的に勝つ */
+  display: none !important;
+}
+
+#correct {
+  font-size: 250px;
+  line-height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 0);
+  color: lightgreen;
+}
+
+#incorrect {
+  font-size: 250px;
+  line-height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0);
+  color: red;
+}
+
+#nextButton {
+  margin-top: 12px;
+  width: 300px;
+  padding: 8px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 8px;
+}
