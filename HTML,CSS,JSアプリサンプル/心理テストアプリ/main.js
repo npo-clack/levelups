@@ -13,7 +13,6 @@ const questionPage = document.getElementById("questionPage");
 const resultPage = document.getElementById("resultPage");
 const resultText = document.getElementById("resultText");
 
-console.log(allRadioInputs.length);
 /*----  関数 ------*/
 function showResult() {
   questionPage.hidden = true;

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三目並べ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="statusText">ステータス文</div>
+      <div>
+        <div class="board-row">
+          <button class="square" id="1_1"></button>
+          <button class="square" id="1_2"></button>
+          <button class="square" id="1_3"></button>
+        </div>
+        <div class="board-row">
+          <button class="square" id="2_1"></button>
+          <button class="square" id="2_2"></button>
+          <button class="square" id="2_3"></button>
+        </div>
+        <div class="board-row">
+          <button class="square" id="3_1"></button>
+          <button class="square" id="3_2"></button>
+          <button class="square" id="3_3"></button>
+        </div>
+      </div>
+    </div>
+    <div id="resultText"></div>
+    <button id="resetButton" hidden>もう一度</button>
+    <script src="main.js"></script>
+  </body>
+</html>

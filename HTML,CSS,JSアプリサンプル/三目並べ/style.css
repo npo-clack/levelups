@@ -1,0 +1,13 @@
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  margin: 0;
+}
