@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .main {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      .main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 30%;
+        z-index: 0;
+        filter: grayscale(100%);
+      }
+      body {
+        margin: 0;
+      }
+      .main-text {
+        position: absolute;
+        color: white;
+        z-index: 2;
+
+        font-weight: bold;
+        font-size: 50px;
+        /* position absoluteで中央寄せする */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <div class="main">
+      <img src="image.jpg" class="main-image" />
+      <div class="main-text">おやつこそすべて</div>
+    </div>
+  </body>
+</html>
