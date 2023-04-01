@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>
+      このアンケートはバートルテストというオンラインプレイヤーの性格を診断するものです。ゲームの設定。
+    </p>
+
+    <ul>
+      <li>オープンワールド</li>
+      <li>マルチプレイヤー</li>
+      <li>オンラインゲーム</li>
+      <li>PK可能</li>
+      <li>
+        基本的にはフィールドのモンスターを倒して経験値を稼ぎストーリーを進めていく
+      </li>
+      <li>クラン作成可能</li>
+    </ul>
+    <div id="questionPage">
+      <p>以下の質問に答えてください。</p>
+
+      <div>
+        <p>どっちが楽しい？</p>
+
+        <div>
+          <input type="radio" id="q1.1" name="q1" value="s" />
+          <label for="q1.1">酒場で友達とおしゃべりする</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q1.2" name="q1" value="a" />
+          <label for="q1.2">経験値稼ぎに一人でオーク狩りをする</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちが楽しい？</p>
+
+        <div>
+          <input type="radio" id="q2.1" name="q2" value="a" />
+          <label for="q2.1">強敵を倒す</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q2.2" name="q2" value="s" />
+          <label for="q2.2">強敵を倒したことを友達に自慢する</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちがよい?</p>
+
+        <div>
+          <input type="radio" id="q3.1" name="q3" value="s" />
+          <label for="q3.1">クエストのストーリーが楽しい</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q3.2" name="q3" value="a" />
+          <label for="q3.2">クエストの報酬が良い</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちで有名になりたい？</p>
+
+        <div>
+          <input type="radio" id="q4.1" name="q4" value="a" />
+          <label for="q4.1">装備の強さ</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q4.2" name="q4" value="s" />
+          <label for="q4.2">個性(性格)</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちになりたい？</p>
+
+        <div>
+          <input type="radio" id="q5.1" name="q5" value="s" />
+          <label for="q5.1">有名</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q5.2" name="q5" value="a" />
+          <label for="q5.2">金持ち</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちが楽しい？</p>
+
+        <div>
+          <input type="radio" id="q6.1" name="q6" value="s" />
+          <label for="q6.1">最新のゴシップ(噂)を入手する</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q6.2" name="q6" value="a" />
+          <label for="q6.2">新しいアイテムを入手する</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらが魅力的？</p>
+        <p></p>
+
+        <div>
+          <input type="radio" id="q7.1" name="q7" value="s" />
+          <label for="q7.1">フレンド限定サーバーへの招待</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q7.2" name="q7" value="a" />
+          <label for="q7.2">数少ない一等地の豪邸</label>
+        </div>
+      </div>
+
+      <div>
+        <p>やるならどっち？</p>
+
+        <div>
+          <input type="radio" id="q8.1" name="q8" value="s" />
+          <label for="q8.1">冒険者の居酒屋の経営</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q8.2" name="q8" value="e" />
+          <label for="q8.2">ワールドマップを作成して売ること</label>
+        </div>
+      </div>
+
+      <div>
+        <p>ゲームとしてはどちらが重要？</p>
+
+        <div>
+          <input type="radio" id="q9.1" name="q9" value="s" />
+          <label for="q9.1">ゲームのプレイヤーの数</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q9.2" name="q9" value="e" />
+          <label for="q9.2">冒険できるエリアの数</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらがより重要？</p>
+
+        <div>
+          <input type="radio" id="q10.1" name="q10" value="s" />
+          <label for="q10.1">ロールプレイ(ストーリー)のクオリティの高さ</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q10.2" name="q10" value="e" />
+          <label for="q10.2">ゲームシステム(バトル)のユニークさ</label>
+        </div>
+      </div>
+
+      <div>
+        <p>あなたはモンスターに追われています。どちらを選択する？</p>
+
+        <div>
+          <input type="radio" id="q11.1" name="q11" value="s" />
+          <label for="q11.1">友人に助けを求める</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q11.2" name="q11" value="e" />
+          <label for="q11.2"
+            >モンスターがこれ以上追ってこれないような場所に隠れる</label
+          >
+        </div>
+      </div>
+
+      <div>
+        <p>とても硬いドラゴンと戦おうとしています。どちらを選択する？</p>
+
+        <div>
+          <input type="radio" id="q12.1" name="q12" value="s" />
+          <label for="q12.1">プレイヤーを集めて物量で倒す</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q12.2" name="q12" value="e" />
+          <label for="q12.2"
+            >ドラゴンの弱点をみつけるまで、いろんな装備や魔法を試す</label
+          >
+        </div>
+      </div>
+
+      <div>
+        <p>
+          見知らぬダンジョンに挑戦しようとしています。パーティにもう１人加えるならどっち？
+        </p>
+
+        <div>
+          <input type="radio" id="q13.1" name="q13" value="s" />
+          <label for="q13.1"
+            >吟遊詩人。いつもあなたとパーティーメンバーを楽しませてくれる親友</label
+          >
+        </div>
+
+        <div>
+          <input type="radio" id="q13.2" name="q13" value="e" />
+          <label for="q13.2">魔法使い。アイテムの場所を知らせてくれる</label>
+        </div>
+      </div>
+
+      <div>
+        <p>有名になるならどっち？</p>
+
+        <div>
+          <input type="radio" id="q14.1" name="q14" value="k" />
+          <label for="q14.1">畏怖される</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q14.2" name="q14" value="s" />
+          <label for="q14.2">愛される</label>
+        </div>
+      </div>
+
+      <div>
+        <p>誰かがあなたをＰＫしました。どうする？</p>
+
+        <div>
+          <input type="radio" id="q15.1" name="q15" value="s" />
+          <label for="q15.1">
+            理由を追求して、彼らがこれ以上PKしないように説得する</label
+          >
+        </div>
+
+        <div>
+          <input type="radio" id="q15.2" name="q15" value="k" />
+          <label for="q15.2">復讐を計画する</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちがよりワクワクする？</p>
+
+        <div>
+          <input type="radio" id="q16.1" name="q16" value="s" />
+          <label for="q16.1">ストーリーに没頭する</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q16.2" name="q16" value="k" />
+          <label for="q16.2">死闘</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちが楽しい？</p>
+
+        <div>
+          <input type="radio" id="q17.1" name="q17" value="k" />
+          <label for="q17.1"> 他のプレイヤーとのとの決闘に勝つ</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q17.2" name="q17" value="s" />
+          <label for="q17.2">クランに受け入れられる</label>
+        </div>
+      </div>
+
+      <div>
+        <p>他プレイヤー(クラン)と敵対しました。どうする？</p>
+
+        <div>
+          <input type="radio" id="q18.1" name="q18" value="k" />
+          <label for="q18.1">敵は倒す</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q18.2" name="q18" value="s" />
+          <label for="q18.2">敵対せずに味方になるように説得する</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どっちがいや？</p>
+
+        <div>
+          <input type="radio" id="q19.1" name="q19" value="k" />
+          <label for="q19.1">力がないこと</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q19.2" name="q19" value="s" />
+          <label for="q19.2">友達がいないこと</label>
+        </div>
+      </div>
+
+      <div>
+        <p>交渉手段として有効なのは？</p>
+
+        <div>
+          <input type="radio" id="q20.1" name="q20" value="s" />
+          <label for="q20.1">相手の話に耳を傾ける</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q20.2" name="q20" value="k" />
+          <label for="q20.2">刃物をちらつかせる</label>
+        </div>
+      </div>
+
+      <div>
+        <p>新しいエリアがオープンしました。どっちの行動をとる？</p>
+
+        <div>
+          <input type="radio" id="q21.1" name="q21" value="e" />
+          <label for="q21.1">そのエリアを探索し歴史を知る</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q21.2" name="q21" value="a" />
+          <label for="q21.2"> 最速で攻略し新しい装備を得る</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらとして知られたい？</p>
+
+        <div>
+          <input type="radio" id="q22.1" name="q22" value="e" />
+          <label for="q22.1">どのエリアにも詳しい</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q22.2" name="q22" value="a" />
+          <label for="q22.2">最もユニークな装備の持ち主</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらになりたい？</p>
+
+        <div>
+          <input type="radio" id="q23.1" name="q23" value="a" />
+          <label for="q23.1">他の友人よりはやく名声を手に入れる</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q23.2" name="q23" value="e" />
+          <label for="q23.2">他の友人よりも多くの秘密を知っている</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらかというと、</p>
+
+        <div>
+          <input type="radio" id="q24.1" name="q24" value="e" />
+          <label for="q24.1">どこを探せばよいか知っている</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q24.2" name="q24" value="a" />
+          <label for="q24.2">入手方法を知っている</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらになりたい？</p>
+
+        <div>
+          <input type="radio" id="q25.1" name="q25" value="e" />
+          <label for="q25.1">いままでだれも解けなかったリドルを解く</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q25.2" name="q25" value="a" />
+          <label for="q25.2">誰よりも早くレベルアップする</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらが良い？</p>
+
+        <div>
+          <input type="radio" id="q26.1" name="q26" value="e" />
+          <label for="q26.1">他の誰も知らないことを知る</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q26.2" name="q26" value="a" />
+          <label for="q26.2">他の誰も持っていないアイテムを持つ</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらのグループに参加する？</p>
+
+        <div>
+          <input type="radio" id="q27.1" name="q27" value="e" />
+          <label for="q27.1">調査、解析班</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q27.2" name="q27" value="k" />
+          <label for="q27.2">戦闘メイン</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらで優勝したい？</p>
+
+        <div>
+          <input type="radio" id="q28.1" name="q28" value="e" />
+          <label for="q28.1">クイズバトル </label>
+        </div>
+
+        <div>
+          <input type="radio" id="q28.2" name="q28" value="k" />
+          <label for="q28.2">闘技場バトル</label>
+        </div>
+      </div>
+
+      <div>
+        <p>過疎エリアに飛ばされた。どちらを思いつく？</p>
+
+        <div>
+          <input type="radio" id="q29.1" name="q29" value="e" />
+          <label for="q29.1">誰にも邪魔されず探索できるな</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q29.2" name="q29" value="k" />
+          <label for="q29.2"> 対戦相手を見つけないとな</label>
+        </div>
+      </div>
+
+      <div>
+        <p>ゲーム内でどちらとして知られたい？</p>
+
+        <div>
+          <input type="radio" id="q30.1" name="q30" value="e" />
+          <label for="q30.1">物知り</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q30.2" name="q30" value="k" />
+          <label for="q30.2">高火力</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらかというと</p>
+
+        <div>
+          <input type="radio" id="q31.1" name="q31" value="k" />
+          <label for="q31.1">敵を倒す</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q31.2" name="q31" value="e" />
+          <label for="q31.2">新しいエリアを探索する</label>
+        </div>
+      </div>
+
+      <div>
+        <p>あなたをキルしようとしている人に気づきました。どうする？</p>
+
+        <div>
+          <input type="radio" id="q32.1" name="q32" value="e" />
+          <label for="q32.1">敵を分析し、対策を練る</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q32.2" name="q32" value="k" />
+          <label for="q32.2">先手必勝、先に相手をキルする</label>
+        </div>
+      </div>
+
+      <div>
+        <p>ビギナープレイヤーと会いました。どう接する？</p>
+
+        <div>
+          <input type="radio" id="q33.1" name="q33" value="e" />
+          <label for="q33.1">あなたのゲーム知識を披露する</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q33.2" name="q33" value="k" />
+          <label for="q33.2">潜在的な獲物としてマークする</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらになりたい？</p>
+
+        <div>
+          <input type="radio" id="q34.1" name="q34" value="a" />
+          <label for="q34.1">最強の装備品をもっているプレイヤー</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q34.2" name="q34" value="k" />
+          <label for="q34.2">ゲームで最も恐れられるプレイヤー</label>
+        </div>
+      </div>
+
+      <div>
+        <p>自慢するなら？</p>
+
+        <div>
+          <input type="radio" id="q35.1" name="q35" value="k" />
+          <label for="q35.1">勝利回数</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q35.2" name="q35" value="a" />
+          <label for="q35.2">装備の強さ</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらが欲しい</p>
+
+        <div>
+          <input type="radio" id="q36.1" name="q36" value="k" />
+          <label for="q36.1"
+            >他プレイヤーへの攻撃力が一時的に増加する魔法</label
+          >
+        </div>
+
+        <div>
+          <input type="radio" id="q36.2" name="q36" value="a" />
+          <label for="q36.2">経験値が一時的に増加する魔法</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらがほしい</p>
+
+        <div>
+          <input type="radio" id="q37.1" name="q37" value="a" />
+          <label for="q37.1">入手経験値が２倍になる指輪</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q37.2" name="q37" value="k" />
+          <label for="q37.2">他プレイヤーへの攻撃力が20%上がる護符</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらがほしい？</p>
+
+        <div>
+          <input type="radio" id="q38.1" name="q38" value="a" />
+          <label for="q38.1">膨大な経験値</label>
+        </div>
+
+        <div>
+          <input type="radio" id="q38.2" name="q38" value="k" />
+          <label for="q38.2">電撃で他プレイヤーを操れる杖</label>
+        </div>
+      </div>
+
+      <div>
+        <p>どちらが楽しい？</p>
+        <div>
+          <input type="radio" id="q39.1" name="q39" value="a" />
+          <label for="q39.1">ハイスコアを取ること</label>
+        </div>
+        <div>
+          <input type="radio" id="q39.2" name="q39" value="k" />
+          <label for="q39.2">友達と戦って勝つこと</label>
+        </div>
+      </div>
+
+      <button id="submitButton">診断する</button>
+    </div>
+    <div id="resultPage" hidden>
+      <h2>結果発表</h2>
+      <div id="resultText"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
